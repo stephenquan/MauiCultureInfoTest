@@ -28,6 +28,11 @@ public partial class MainPage : ContentPage
 	public DateTime LastChecked => DateTime.Now;
 
 	/// <summary>
+	/// A test currency amount.
+	/// </summary>
+	public double CurrencyTest { get; set;} = 123.45;
+
+	/// <summary>
 	/// Initializes a new instance of the <see cref="MainPage"/> class.
 	/// </summary>
 

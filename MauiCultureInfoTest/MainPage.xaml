@@ -10,10 +10,11 @@
 
     <ScrollView>
         <VerticalStackLayout Padding="30,30,30,200" Spacing="25">
-            <Label Text="{Binding InstalledUICulture, StringFormat='CultureInfo.InstalledUICulture: {0}'}" />
-            <Label Text="{Binding CurrentUICulture, StringFormat='CultureInfo.CurrentUICulture: {0}'}" />
-            <Label Text="{Binding CurrentCulture, StringFormat='CultureInfo.CurrentCulture: {0}'}" />
-            <Label Text="{Binding LastChecked, StringFormat='Last checked: {0}'}" />
+            <Entry Text="{Binding InstalledUICulture, StringFormat='CultureInfo.InstalledUICulture: {0}'}" />
+            <Entry Text="{Binding CurrentUICulture, StringFormat='CultureInfo.CurrentUICulture: {0}'}" />
+            <Entry Text="{Binding CurrentCulture, StringFormat='CultureInfo.CurrentCulture: {0}'}" />
+            <Entry Text="{Binding LastChecked, StringFormat='Last checked: {0}'}" />
+            <Entry Text="{Binding CurrencyTest, StringFormat='Currency test: {0:C}'}" />
 
             <Button Clicked="OnRefresh" Text="Refresh" />
         </VerticalStackLayout>
