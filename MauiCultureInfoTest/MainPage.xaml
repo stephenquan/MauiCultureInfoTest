@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiCultureInfoTest.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiCultureInfoTest"
+    x:Name="mainPage"
+    x:DataType="local:MainPage"
+    BindingContext="{Reference mainPage}">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,30,30,200" Spacing="25">
+            <Label Text="{Binding InstalledUICulture, StringFormat='CultureInfo.InstalledUICulture: {0}'}" />
+            <Label Text="{Binding CurrentUICulture, StringFormat='CultureInfo.CurrentUICulture: {0}'}" />
+            <Label Text="{Binding CurrentCulture, StringFormat='CultureInfo.CurrentCulture: {0}'}" />
+            <Label Text="{Binding LastChecked, StringFormat='Last checked: {0}'}" />
+
+            <Button Clicked="OnRefresh" Text="Refresh" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
