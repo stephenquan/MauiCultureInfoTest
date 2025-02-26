@@ -1,10 +1,9 @@
-﻿namespace MauiCultureInfoTest
+﻿namespace MauiCultureInfoTest;
+
+public partial class AppShell : Shell
 {
-    public partial class AppShell : Shell
-    {
-        public AppShell()
-        {
-            InitializeComponent();
-        }
-    }
+	public AppShell()
+	{
+		InitializeComponent();
+	}
 }
